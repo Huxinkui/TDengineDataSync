@@ -49,7 +49,6 @@ typedef struct taosField {
   uint16_t bytes;
 } TAOS_FIELD;
 
-// 经过测试 3.0.7.1 的libtaos.so 可支持 2.6.0.34 版本的数据连接和插入，为了防止其他异常，请使用指定版本的动态库链接指定的版本 
 // 替换taos动态库函数 
 int taos_init(std::string version = "2.6");
 void taos_cleanup(std::string version = "2.6");
