@@ -1,0 +1,31 @@
+[
+    {
+        "_comment":"TDengine stableName必填 columns必填 并且作为主键的列必须在columns中第一个,并且总列数必须大于等于2，tags可选",
+        "stableName":"stb_name",
+        "columns":[
+            {
+                "columnName":"updatetime",
+                "columnType":"TIMESTAMP"
+            },
+            {
+                "columnName":"value",
+                "columnType":"double"
+            },
+            {
+                "columnName":"status",
+                "columnType":"BINARY(128)"
+            }
+        ],
+        "tags":[
+            {
+                "tagName":"tag1",
+                "tagType":"BINARY(128)"
+            },
+            {
+                "tagName":"tag2",
+                "tagType":"BINARY(128)"
+            }
+        ]
+
+    }
+]
